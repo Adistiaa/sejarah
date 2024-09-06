@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sejarah By Adistia</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <style>
+        html {
+  scroll-behavior: smooth;
+}
+
+        html, body {
+    overflow-x: hidden; /* bar horizontal hilang */
+}
+
+        .swiper-container {
+    overflow: hidden;
+}
+
+        /* Scrollbar Minimalis */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb {
+            background-color: #888;
+            border-radius: 10px;
+            border: 2px solid #f1f1f1;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #555;
+        }
+
+        /* Style Navbar */
+        .navbar {
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 50px;
+            padding: 10px 20px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            position: fixed;
+            top: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 1000;
+        }
+        .navbar a {
+            color: #555;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+        .navbar a:hover {
+            color: #1d4ed8; /* Hover Biru */
+        }
+
+        .material-symbols-outlined {
+            font-size: 24px;
+            vertical-align: middle;
+        }
+
+        /* Hero Section Style */
+        .hero-section {
+            background-image: url('assets/bg/Gambar\ Screen.jpg');
+            background-size: cover;
+            background-position: center;
+            height: 100vh;
+            margin-top: 0;
+            animation: fadeIn 2s ease-in-out;
+        }
+        .hero-overlay {
+            background: rgba(0, 0, 0, 0.5);
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        /* Animation Loading */
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+
+        /* Animation Text "Sejarah" */
+        .hero-overlay h1 {
+            animation: slideUp 2s ease-in-out;
+        }
+        @keyframes slideUp {
+            0% {
+                transform: translateY(50px);
+                opacity: 0;
+            }
+            100% {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+
+        /* Section */
+        .section-title {
+            font-size: 2.5rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #1d4ed8; /* biru */
+        }
+        .section-content {
+            margin-bottom: 4rem;
+        }
+    </style>
+    <style>
+        .swiper-container {
+           transform: translate3d(0, 0, 0);
+        }
+        .swiper-slide {
+           will-change: transform;
+        }
+
+    </style>
+</head>
+<body class="bg-gray-100">
+
+    <!-- Navbar Google -->
+    <nav class="navbar">
+        <a href="#">
+            <span class="material-symbols-outlined">
+                home
+            </span>
+        </a>
+        <a href="#P">
+            <span class="material-symbols-outlined">
+                info
+            </span>
+        </a>
+        <a href="#MIE">
+            <span class="material-symbols-outlined">
+                history
+            </span>
+        </a>
+        <a href="#F">
+            <span class="material-symbols-outlined">
+                contact_support
+            </span>
+        </a>
+    </nav>
+
+    <!-- Section Landing Page -->
+    <div class="relative hero-section">
+        <div class="hero-overlay">
+            <h1 class="text-white text-4xl md:text-6xl font-bold">Tugas Sejarah</h1>
+        </div>
+    </div>
+
+    <!-- Section Pengertian -->
+    <section class="py-12 px-4" id="P">
+        <div class="container mx-auto">
+            <h2 class="section-title font-bold">Pengertian Sejarah</h2>
+            <p class="text-gray-700 mb-6">Sejarah merupakan hal yang tidak bisa dilepaskan dari peradaban manusia yang terus berkembang dan berevolusi. Sebagai makhluk yang hidupnya dinamis, manusia akan menciptakan sejarah dan kemudian bermanfaat bagi kehidupan sekarang dan masa datang. 
+                <br>Sejarah secara etimologi berasal dari kata bahasa Arab syajaratun yang artinya pohon dan dalam bahasa Arab sendiri sejarah disebut dengan tarikh. Pohon memiliki makna percabangan geneologis suatu kelompok keluarga yang menyerupai pohon yang penuh cabang, ranting sampai akar-akarnya. Kata syajaratun dalam bahasa Arab kemudian berkembang dalam bahasa Melayu menjadi syajarah.
+            </p>              
+        </div>
+    </section>
+
+    <section class="py-12 px-4 bg-gray-200" id="IE">
+        <div class="container mx-auto">
+            <h2 class="section-title font-bold">Unsur Intrinsik dan Ekstrinsik</h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <!-- Card 1: Unsur Intrinsik -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="assets/ie/WhatsApp-Image-2023-03-14-at-14.58.44-1536x1023.jpeg" alt="Intrinsik" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Unsur Intrinsik</h3>
+                        <p class="text-gray-700">Unsur intrinsik dalam sejarah adalah faktor-faktor internal yang berasal dari dalam suatu peristiwa atau kejadian sejarah itu sendiri. Ini mencakup elemen-elemen yang berhubungan langsung dengan latar belakang, dinamika, dan karakteristik peristiwa sejarah tersebut.</p>
+                    </div>
+                </div>
+                <!-- Card 2: Unsur Ekstrinsik -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img src="assets/ie/foto-penangkapan-pangeran-diponegoro.jpg" alt="Ekstrinsik" class="w-full h-48 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Unsur Ekstrinsik</h3>
+                        <p class="text-gray-700">Unsur ekstrinsik adalah faktor-faktor eksternal yang mempengaruhi atau membentuk peristiwa sejarah dari luar, tetapi tidak secara langsung menjadi bagian dari peristiwa itu sendiri. Ini lebih berhubungan dengan kondisi umum yang melingkupi atau mempengaruhi peristiwa sejarah.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section -->
+        <section class="py-12 px-4 bg-gray-100" id="MIE">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold mb-4 text-center">Contoh Unsur Intrinsik</h2>
+                <p class="text-gray-700 text-center mb-8">Berikut adalah beberapa unsur penting Intrinsik. Geser untuk lihat lebih banyak.</p>
+                
+                <!-- container -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <!-- card1 -->
+                        <div class="swiper-slide bg-white rounded-lg shadow-lg overflow-hidden">
+                            <img src="assets/card1/pngtree-global-economy-paper-exploration-globe-photo-image_13934408.jpg" alt="Sosial Ekonomi Politik" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-2">Latar Belakang Sosial Politik Ekonomi</h3>
+                                <p class="text-gray-700">Misalnya, kondisi sosial masyarakat pada masa tertentu, seperti adanya ketimpangan sosial, krisis ekonomi, atau ketidakstabilan politik.</p>
+                            </div>
+                        </div>
+                        <!-- card2 -->
+                        <div class="swiper-slide bg-white rounded-lg shadow-lg overflow-hidden">
+                            <img src="assets/card1/pngtree-an-open-book-with-a-photograph-of-history-image_2960359.png" alt="Sejarah" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-2">Pelaku Sejarah</h3>
+                                <p class="text-gray-700">Orang, kelompok, atau pihak yang terlibat secara langsung dalam peristiwa sejarah, seperti pemimpin, masyarakat umum, atau organisasi.</p>
+                            </div>
+                        </div>
+                        <!-- card3 -->
+                        <div class="swiper-slide bg-white rounded-lg shadow-lg overflow-hidden">
+                            <img src="assets/card1/manajemen-waktu.png" alt="Waktu Tempat" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-2">Waktu dan Tempat</h3>
+                                <p class="text-gray-700">Kapan dan di mana peristiwa itu terjadi, yang mempengaruhi jalannya kejadian dan keputusan yang diambil.</p>
+                            </div>
+                        </div>
+                        <!-- card4 -->
+                        <div class="swiper-slide bg-white rounded-lg shadow-lg overflow-hidden">
+                            <img src="assets/card1/SHUTTERSTOCK-KARIER-MOTIVASI-GAYA-HIDUP-1.jpg" alt="Alasan" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-2">Alasan Hal Itu Terjadi</h3>
+                                <p class="text-gray-700">Mengapa peristiwa itu terjadi, termasuk tujuan atau motif para pelaku, apakah untuk meraih kemerdekaan, perubahan sosial, atau tujuan lain.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- tombol navigasi -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="py-12 px-4 bg-gray-200">
+            <div class="container mx-auto">
+                <h2 class="text-3xl font-bold mb-4 text-center">Contoh Unsur Ekstrinsik</h2>
+                <p class="text-gray-700 text-center mb-8">Berikut adalah beberapa unsur penting Ekstrinsik. Geser untuk lihat lebih banyak.</p>
+                
+                <!-- container -->
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <!-- card1eks -->
+                        <div class="swiper-slide bg-white rounded-lg shadow-lg overflow-hidden">
+                            <img src="assets/card2/Kondisi Geografis Indonesia.jpg" alt="Geografis" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-2">Kondisi Geografis</h3>
+                                <p class="text-gray-700">Lokasi geografis suatu wilayah yang dapat mempengaruhi strategi militer, perdagangan, atau perpindahan penduduk.</p>
+                            </div>
+                        </div>
+                        <!-- card2eks -->
+                        <div class="swiper-slide bg-white rounded-lg shadow-lg overflow-hidden">
+                            <img src="assets/card2/penetrasi-budaya-637c736d95660603363ee512.jpg" alt="Asing" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-2">Pengaruh Asing</h3>
+                                <p class="text-gray-700">Interaksi dengan bangsa atau negara lain yang berdampak pada perubahan politik, sosial, atau budaya, seperti kolonialisme, diplomasi, atau invasi.</p>
+                            </div>
+                        </div>
+                        <!-- card3eks -->
+                        <div class="swiper-slide bg-white rounded-lg shadow-lg overflow-hidden">
+                            <img src="assets/card2/630482c63af5e.jpg" alt="Kondisi Alam" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-2">Kondisi Alam</h3>
+                                <p class="text-gray-700">Bencana alam atau perubahan iklim yang mungkin mempengaruhi peristiwa sejarah, seperti kekeringan, banjir, atau gempa bumi.</p>
+                            </div>
+                        </div>
+                        <!-- card4eks -->
+                        <div class="swiper-slide bg-white rounded-lg shadow-lg overflow-hidden">
+                            <img src="assets/card2/istock-1274417553_ratio-16x9.jpg" alt="Teknologi" class="w-full h-48 object-cover">
+                            <div class="p-6">
+                                <h3 class="text-xl font-bold mb-2">Teknologi Dan Ilmu Pengetahuan</h3>
+                                <p class="text-gray-700">Perkembangan teknologi yang dapat mempengaruhi perang, industri, atau kehidupan sehari-hari masyarakat pada masa tertentu.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- tombol navigasi -->
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-6" id="F">
+        <div class="container mx-auto text-center">
+            <p>By Muhammad Adistia Pratama (X SIJA 2) &copy;2024.</p>
+            <div class="flex justify-center space-x-4 mt-4">
+                <a href="https://github.com/Adistiaa" target="_blank" class="text-gray-400 hover:text-white">
+                    <span class="material-symbols-outlined">code</span> <!-- GitHub Icon -->
+                </a>
+                <a href="https://www.instagram.com/bad.single_player?igsh=MTE4OHIwMTIxYjYxbA==" target="_blank" class="text-gray-400 hover:text-white">
+                    <span class="material-symbols-outlined">camera_alt</span> <!-- Instagram Icon -->
+                </a>
+                <a href="https://wa.me/message/6F6JAL4M5RFKD1" target="_blank" class="text-gray-400 hover:text-white">
+                    <span class="material-symbols-outlined">chat</span> <!-- WhatsApp Icon -->
+                </a>
+                <a href="t.me/Bad_SinglePlayer" target="_blank" class="text-gray-400 hover:text-white">
+                    <span class="material-symbols-outlined">send</span> <!-- Telegram Icon -->
+                </a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<script>
+    var swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 10,
+      loop: true,  // Ulang
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        640: {
+          slidesPerView: 1,
+          spaceBetween: 10,
+        },
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 10,
+        },
+        1024: {
+          slidesPerView: 3,
+          spaceBetween: 10,
+        },
+      },
+    });
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script>
+    window.onload = function() {
+        Swal.fire({
+            title: 'Hello World!',
+            text: 'Makasih mau mengunjungi web ini😁', //info sweetalert2
+            icon: 'info',
+            confirmButtonText: 'OK'
+        });
+    };
+</script>
+
+</html>
